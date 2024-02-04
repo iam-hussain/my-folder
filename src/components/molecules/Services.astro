@@ -1,0 +1,47 @@
+---
+import ServiceCard from "../atoms/ServiceCard.astro";
+---
+
+<div
+  class="m-auto min-h-screen flex items-center justify-center flex-col w-full gap-5 md:gap-10 max-w-xs"
+  id="service"
+>
+  <h2 class="uppercase text-xl font-serif text-gray-700">Thinks I do</h2>
+  <div class="flex flex-wrap gap-6 justify-center">
+    <ServiceCard
+      hed={"Web Development"}
+      dek="I develop custom web applications, e-commerce websites, and portals using technologies such as HTML, CSS, JavaScript, React, Next, Astro, Node.js, and Express.js."
+      icon={`<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path class="fill-gray-600" d="M16.36 14c.08-.66.14-1.32.14-2c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2c0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2c0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2c0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg>`}
+    />
+    <ServiceCard
+      hed={"Website Maintenance and Upgrades"}
+      dek="I help clients maintain and upgrade their existing websites to ensure they are running smoothly and meet the latest industry standards."
+      icon={`<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path class="fill-gray-600" d="M11 8v5l4.25 2.52l.77-1.28l-3.52-2.09V8H11zm10 2V3l-2.64 2.64A8.937 8.937 0 0 0 12 3a9 9 0 1 0 9 9h-2c0 3.86-3.14 7-7 7s-7-3.14-7-7s3.14-7 7-7c1.93 0 3.68.79 4.95 2.05L14 10h7z"/></svg>`}
+    />
+    <ServiceCard
+      hed={"Database Development"}
+      dek="I help clients design, implement, and maintain database systems using technologies like MongoDB, MySQL, and PostgreSQL."
+      icon={`<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path class="fill-gray-600" d="M12 11q-3.75 0-6.375-1.175T3 7q0-1.65 2.625-2.825Q8.25 3 12 3t6.375 1.175Q21 5.35 21 7q0 1.65-2.625 2.825Q15.75 11 12 11Zm0 5q-3.75 0-6.375-1.175T3 12V9.5q0 1.1 1.025 1.863q1.025.762 2.45 1.237q1.425.475 2.963.687q1.537.213 2.562.213t2.562-.213q1.538-.212 2.963-.687q1.425-.475 2.45-1.237Q21 10.6 21 9.5V12q0 1.65-2.625 2.825Q15.75 16 12 16Zm0 5q-3.75 0-6.375-1.175T3 17v-2.5q0 1.1 1.025 1.863q1.025.762 2.45 1.237q1.425.475 2.963.688q1.537.212 2.562.212t2.562-.212q1.538-.213 2.963-.688t2.45-1.237Q21 15.6 21 14.5V17q0 1.65-2.625 2.825Q15.75 21 12 21Z"/></svg>`}
+    />
+    <ServiceCard
+      hed={"API Development"}
+      dek="I help clients create RESTful APIs and GraphQL that allow their websites and applications to communicate with other systems."
+      icon={`<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path class="fill-gray-600" d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg>`}
+    />
+    <ServiceCard
+      hed={"Cross-platform Development"}
+      dek="I help clients build mobile and desktop applications using technologies like React Native, Electron, and Node.js."
+      icon={`<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path class="fill-gray-600" d="m21 17l-.625-1.375L19 15l1.375-.625L21 13l.625 1.375L23 15l-1.375.625Zm-5-1l-1.25-2.75L12 12l2.75-1.25L16 8l1.25 2.75L20 12l-2.75 1.25Zm5-5l-.625-1.375L19 9l1.375-.625L21 7l.625 1.375L23 9l-1.375.625ZM7 23q-.825 0-1.412-.587Q5 21.825 5 21V3q0-.825.588-1.413Q6.175 1 7 1h10q.825 0 1.413.587Q19 2.175 19 3v4h-2V6H7v12h10v-1h2v4q0 .825-.587 1.413Q17.825 23 17 23Z"/></svg>`}
+    />
+    <ServiceCard
+      hed={"Cloud Development"}
+      dek="I help clients deploy their applications to cloud platforms like AWS, Digital Ocean, Heroku, and Google Cloud with Docker, Nignx and more."
+      icon={`<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path class="fill-gray-600" d="M6.5 20q-2.275 0-3.887-1.575Q1 16.85 1 14.575q0-1.95 1.175-3.475Q3.35 9.575 5.25 9.15q.625-2.3 2.5-3.725Q9.625 4 12 4q2.925 0 4.962 2.037Q19 8.075 19 11q1.725.2 2.863 1.487Q23 13.775 23 15.5q0 1.875-1.312 3.188Q20.375 20 18.5 20Z"/></svg>`}
+    />
+    <ServiceCard
+      hed={"Technical Consultation"}
+      dek="I provide technical consultation services to help clients choose the right technology stack for their projects, and provide recommendations for best practices and architecture."
+      icon={`<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path class="fill-gray-600" d="M11 24h10v2H11zm2 4h6v2h-6zm3-26A10 10 0 0 0 6 12a9.19 9.19 0 0 0 3.46 7.62c1 .93 1.54 1.46 1.54 2.38h2c0-1.84-1.11-2.87-2.19-3.86A7.2 7.2 0 0 1 8 12a8 8 0 0 1 16 0a7.2 7.2 0 0 1-2.82 6.14c-1.07 1-2.18 2-2.18 3.86h2c0-.92.53-1.45 1.54-2.39A9.18 9.18 0 0 0 26 12A10 10 0 0 0 16 2z"/></svg>`}
+    />
+  </div>
+</div>

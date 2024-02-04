@@ -1,0 +1,26 @@
+---
+const { hed, dek, icon } = Astro.props;
+---
+
+<div
+  class="md:box flex grow flex-col gap-2 md:gap-8 border-style border-gray-200 md:border-2 border-solid md:p-5 rounded-lg h-full"
+>
+  <div
+    class="flex items-center md:items-start justify-center md:justify-start gap-3 flex-col"
+  >
+    {icon && <div set:html={icon} />}
+    <h3 class="text-sm font-sans text-rose-600 uppercase font-semibold">
+      {hed}
+    </h3>
+  </div>
+  <p class="text-center md:text-left text-sm text-gray-600 font-mono">
+    {dek}
+  </p>
+</div>
+
+<style>
+  .box {
+    max-width: 270px;
+    min-height: 300px;
+  }
+</style>

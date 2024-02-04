@@ -1,0 +1,40 @@
+---
+import NavBar from "../components/molecules/NavBar.astro";
+import Hero from "../components/molecules/Hero.astro";
+import Skills from "../components/molecules/Skills.astro";
+import Services from "../components/molecules/Services.astro";
+import Contact from "../components/molecules/Contact.astro";
+import { metaData } from "../constant";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{metaData.title}</title>
+
+    <meta name="description" content={metaData.description} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={metaData.title} />
+    <meta property="og:description" content={metaData.description} />
+    <meta property="og:url" content={metaData.url} />
+    <meta property="og:site_name" content={metaData.title} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={metaData.title} />
+    <meta name="twitter:description" content={metaData.description} />
+    <meta name="twitter:image" content={metaData.image} />
+    <meta name="theme-color" content="#e11d48" />
+  </head>
+  <body>
+    <NavBar />
+    <div class="container px-4 md:m-auto md:w-10/12 flex gap-10 flex-col pb-10">
+      <Hero />
+      <Skills />
+      <Services />
+      <Contact />
+    </div>
+  </body>
+</html>

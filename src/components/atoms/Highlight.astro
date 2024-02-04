@@ -1,0 +1,11 @@
+---
+const { htmlString, value } = Astro.props;
+---
+
+<div class="text-center md:text-right flex flex-col gap-2 md:gap-4 w-auto">
+  <p
+    class="uppercase font-sans md:text-sm text-[10px] font-semibold text-rose-600"
+    set:html={htmlString}
+  />
+  <span class="text-xl md:text-5xl text-gray-700">{value}</span>
+</div>

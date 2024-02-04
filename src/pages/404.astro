@@ -1,0 +1,58 @@
+---
+import { metaData } from "../constant";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{metaData.title}</title>
+
+    <meta name="description" content={metaData.description} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={metaData.title} />
+    <meta property="og:description" content={metaData.description} />
+    <meta property="og:url" content={metaData.url} />
+    <meta property="og:site_name" content={metaData.title} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={metaData.title} />
+    <meta name="twitter:description" content={metaData.description} />
+    <meta name="twitter:image" content={metaData.image} />
+    <meta name="theme-color" content="#e11d48" />
+  </head>
+  <body>
+    <div class="flex min-h-screen w-full justify-center items-center">
+      <div class="flex flex-col gap-5 justify-center items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          class="fill-current md:h-52 md:w-52 w-36 h-36"
+          ><path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 7v4a1 1 0 0 0 1 1h3m0-5v10m3-9v8a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1zm7-1v4a1 1 0 0 0 1 1h3m0-5v10"
+          ></path></svg
+        >
+
+        <p class="text-1xl md:text-2xl font-mono text-center">
+          Sorry<br /> The requested URL not found!
+        </p>
+
+        <a
+          href="/"
+          class="bg-rose-500 hover:bg-rose-400 text-white font-bold py-2 px-6 border-2 border-rose-500 hover:border-rose-400 rounded inline-flex items-center md:text-base text-sm"
+        >
+          <span class="uppercase">Go back to home page</span>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

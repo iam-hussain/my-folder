@@ -1,0 +1,15 @@
+---
+import { metaData } from "../../constant";
+const { isNavbarPostion = false } = Astro.props;
+---
+
+<div
+  class:list={[
+    "text-sm select-none dark:text-white text-rose-600 uppercase font-bold",
+    {
+      "absolute top-0 bottom-0 left-0 right-0 m-auto w-max": isNavbarPostion,
+    },
+  ]}
+>
+  {metaData.website}
+</div>

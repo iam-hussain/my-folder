@@ -1,0 +1,23 @@
+---
+const { htmlString, value } = Astro.props;
+const { isTextRight = false } = Astro.props;
+---
+
+<div
+  class:list={[
+    "flex flex-col gap-2 text-center",
+    {
+      "md:text-left": !isTextRight,
+      "md:text-right": isTextRight,
+    },
+  ]}
+>
+  <p
+    class="uppercase font-sans text-sm font-semibold text-rose-600"
+    set:html={htmlString}
+  />
+  <span
+    class="font-mono text-sm font-medium text-gray-600 leading-6"
+    set:html={value}
+  />
+</div>

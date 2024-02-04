@@ -1,0 +1,28 @@
+<div
+  class="bg-cover border-style border-rose-600 border-2 border-solid p-4 md:p-8 select-none block"
+>
+  <div class="cover border-style"></div>
+</div>
+<style>
+  .border-style {
+    border-radius: 50% / 35%;
+  }
+
+  .cover {
+    position: relative;
+    z-index: -10;
+    width: 200px;
+    height: 300px;
+    background: #e11d48;
+    background-image: linear-gradient(to top, #e11d4845, #e11d4845),
+      url("/cover.jpg");
+    background-size: cover;
+    background-position-x: center;
+  }
+  @media only screen and (min-width: 768px) {
+    .cover {
+      width: 350px;
+      height: 500px;
+    }
+  }
+</style>

@@ -1,0 +1,17 @@
+---
+import Brand from "../atoms/Brand.astro";
+import Menu from "../atoms/Menu.astro";
+import Social from "../atoms/Social.astro";
+---
+
+<nav
+  class="bg-white px-2 py-5 dark:bg-gray-800 hidden md:block left-0 right-0 fixed"
+>
+  <div
+    class="relative container h-full flex flex-wrap justify-between items-center mx-auto md:flex-row gap-0"
+  >
+    <Menu />
+    <Brand isNavbarPostion={true} />
+    <Social />
+  </div>
+</nav>

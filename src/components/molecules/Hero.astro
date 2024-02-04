@@ -1,0 +1,57 @@
+---
+import Title from "../atoms/Title.astro";
+import Poster from "../atoms/Poster.astro";
+import Highlight from "../atoms/Highlight.astro";
+import Lowlight from "../atoms/Lowlight.astro";
+import MobileSocial from "../atoms/MobileSocial.astro";
+---
+
+<div
+  class="m-auto hero flex items-center justify-center flex-col w-full"
+  id="home"
+>
+  <Title />
+  <MobileSocial />
+  <div
+    class="flex justify-center md:justify-between w-full md:flex-row flex-col-reverse items-center gap-8 md:gap-10"
+  >
+    <div
+      class="flex flex-col gap-5 md:gap-10 justify-center items-center md:items-start md:w-2/12 w-10/12"
+    >
+      <Lowlight
+        htmlString={"Summary"}
+        value={"I code and develop beautiful things, and I love what I do."}
+      />
+      <Lowlight
+        htmlString={"Contact"}
+        value={"Jakir Hussain <br /> itsjakirhussain@gmail.com <br /> +91 9629180060"}
+      />
+      <Lowlight
+        htmlString={"Service"}
+        value={"Web Development <br /> Website Maintenance <br /> Database Development <br /> API Development <br /> Cross-platform Development <br /> Cloud Deployment <br /> Technical Consultation"}
+      />
+    </div>
+    <Poster />
+    <div
+      class="flex flex-row md:flex-col gap-3 md:gap-10 justify-center items-end md:w-2/12 w-10/12"
+    >
+      <Highlight htmlString={"Years of <br /> Experience"} value={"5+"} />
+      <Highlight htmlString={"Clients <br /> Satisfaction"} value={"100%"} />
+      <Highlight htmlString={"Clients <br /> Worldwide"} value={"15+"} />
+      <Highlight htmlString={"Projects <br /> Worked"} value={"25+"} />
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero {
+    min-height: calc(100vh - 66px);
+    padding-top: 32px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .hero {
+      padding-top: 66px;
+    }
+  }
+</style>
